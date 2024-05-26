@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+<div class="content-container">
+    <h1>Welcome to the Spots</h1>
+</div>
+<div class="center">
+    <a href="/addSpot"><button class="button_blue">Add Spot</button></a>
+</div>
+<div class="center">
+    <% if (locals.spotName && locals.rating) {%>
+    <p>Name: <%= spotName %></p> 
+    <br>
+    <p>Rating: <%= rating %></p>
+    <% } %>
+</div>
+
+<%- include("partials/footer.ejs") %>

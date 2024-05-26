@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Add Spots</h1>
+
+<div class="center">
+<form action="/check" method="POST">
+  
+  <label for="spotName">Name the spot:</labelbr><br>
+  <input type="text" id="spotName" name="spotName"><br>
+  <label for="rating">Rating:</label><br>
+  <input type="radio" id="oneStar" name="rating" value="⭐">
+  <label for="oneStar">⭐</label><br>
+  <input type="radio" id="twoStar" name="rating" value="⭐⭐">
+  <label for="towStar">⭐⭐</label><br>
+  <input type="radio" id="threeStar" name="rating" value="⭐⭐⭐">
+  <label for="threeStar">⭐⭐⭐</label><br>
+  <input type="radio" id="fourStar" name="rating" value="⭐⭐⭐⭐">
+  <label for="fourStar">⭐⭐⭐⭐</label><br>
+  <input type="radio" id="fiveStar" name="rating" value="⭐⭐⭐⭐⭐">
+  <label for="fiveStar">⭐⭐⭐⭐⭐</label><br>
+  <input type="submit" value="Submit"><br>
+
+</form>
+</div>
+
+<%- include("partials/footer.ejs") %>
