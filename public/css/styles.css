@@ -91,7 +91,11 @@ footer{
   align-items: center;
 }
 
+.column{
+    flex-direction: column;
+    gap: 20px;
 
+}
 
 /*Buttons*/
 

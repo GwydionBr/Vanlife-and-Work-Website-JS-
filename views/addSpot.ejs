@@ -3,23 +3,42 @@
 <h1>Add Spots</h1>
 
 <div class="center">
-<form action="/check" method="POST">
+<form action="/addSpot" method="POST">
   
   <label for="spotName">Name the spot:</labelbr><br>
   <input type="text" id="spotName" name="spotName"><br>
-  <label for="rating">Rating:</label><br>
-  <input type="radio" id="oneStar" name="rating" value="⭐">
-  <label for="oneStar">⭐</label><br>
-  <input type="radio" id="twoStar" name="rating" value="⭐⭐">
-  <label for="towStar">⭐⭐</label><br>
-  <input type="radio" id="threeStar" name="rating" value="⭐⭐⭐">
-  <label for="threeStar">⭐⭐⭐</label><br>
-  <input type="radio" id="fourStar" name="rating" value="⭐⭐⭐⭐">
-  <label for="fourStar">⭐⭐⭐⭐</label><br>
-  <input type="radio" id="fiveStar" name="rating" value="⭐⭐⭐⭐⭐">
-  <label for="fiveStar">⭐⭐⭐⭐⭐</label><br>
-  <input type="submit" value="Submit"><br>
 
+  <label for="spotDescription">Describe the spot:</labelbr><br>
+  <input type="text" id="spotDescription" name="spotDescription"><br>
+
+  <label for="generalRating">General Rating:</labelbr><br>
+  <select id="generalRating" name="generalRating">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select><br>
+
+  <label for="internetRating">Internet Rating:</labelbr><br>
+  <select id="internetRating" name="internetRating">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select><br>
+
+  <label for="location">Location:</label><br>
+  <input type="text" id="location" name="location"><br>
+  
+  <label for="startDate">Start Date:</label><br>
+  <input type="date" id="startDate" name="startDate"><br>
+
+  <label for="endDate">End Date:</label><br>
+  <input type="date" id="endDate" name="endDate"><br>
+
+  <input type="submit" value="Submit">
 </form>
 </div>
 

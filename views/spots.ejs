@@ -6,12 +6,21 @@
 <div class="center">
     <a href="/addSpot"><button class="button_blue">Add Spot</button></a>
 </div>
-<div class="center">
-    <% if (locals.spotName && locals.rating) {%>
-    <p>Name: <%= spotName %></p> 
-    <br>
-    <p>Rating: <%= rating %></p>
-    <% } %>
+<div class="center column">
+    <% spots.map(spot => { %>
+        <div class="spot">
+            <h2><%= spot.name %></h2>
+            <h3><%= spot.description %></h3>
+            <ul>
+                <li>General Rating: <%= spot.general_rating %></li>
+                <li>Internet Rating: <%= spot.internet_rating %></li>
+                <li>Location: <%= spot.location %></li>
+                <!-- <li>Start Date: <%= spot.start_date %></li>
+                <li>End Date: <%= spot.end_date %></li> -->
+            </ul>
+            <a href="/spot/<%= spot._id %>"><button class="button_blue">View Spot</button></a>
+        </div>
+    <% }) %>
 </div>
 
 <%- include("partials/footer.ejs") %>
